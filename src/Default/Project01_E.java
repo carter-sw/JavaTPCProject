@@ -4,11 +4,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import javax.xml.crypto.Data;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.Date;
 
@@ -27,8 +25,8 @@ public class Project01_E {
             URL u = new URL(url);
             HttpURLConnection con = (HttpURLConnection) u.openConnection();
             con.setRequestMethod("GET");
-            con.setRequestProperty("X-NCP-APIGW-API-KEY-ID","???");
-            con.setRequestProperty("X-NCP-APIGW-API-KEY","???");
+            con.setRequestProperty("X-NCP-APIGW-API-KEY-ID","2ol0grbpbo");
+            con.setRequestProperty("X-NCP-APIGW-API-KEY","7kH85K88PydJmNpqZil6damqvR2tT6Aj6Lu6kzVa");
             int reponseCode = con.getResponseCode();
             BufferedReader br;
             if(reponseCode == 200){
@@ -60,8 +58,8 @@ public class Project01_E {
     }
     public static void main(String[] args) {
         // String apiURL = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=";
-        String client_id ="???"; // Naver cloud 지도 API 발급 ID
-        String client_secret="???"; // Naver cloud 지도 API 발급 P/W
+        String client_id ="2ol0grbpbo"; // Naver cloud 지도 API 발급 ID
+        String client_secret="7kH85K88PydJmNpqZil6damqvR2tT6Aj6Lu6kzVa"; // Naver cloud 지도 API 발급 P/W
         BufferedReader io = new BufferedReader(new InputStreamReader(System.in));
 
         try{

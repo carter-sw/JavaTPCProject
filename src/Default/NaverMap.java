@@ -23,8 +23,8 @@ public class NaverMap implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String clientId = "???";
-        String clientSecret = "???";
+        String clientId = "2ol0grbpbo";
+        String clientSecret = "7kH85K88PydJmNpqZil6damqvR2tT6Aj6Lu6kzVa";
         AddressVO vo=null;
         try {
             String address =NaverMap.address.getText();
@@ -78,8 +78,8 @@ public class NaverMap implements ActionListener {
             URL url = new URL(URL_STATICMAP);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
-            con.setRequestProperty("X-NCP-APIGW-API-KEY-ID", "???");
-            con.setRequestProperty("X-NCP-APIGW-API-KEY", "???");
+            con.setRequestProperty("X-NCP-APIGW-API-KEY-ID", "2ol0grbpbo");
+            con.setRequestProperty("X-NCP-APIGW-API-KEY", "7kH85K88PydJmNpqZil6damqvR2tT6Aj6Lu6kzVa");
             int responseCode = con.getResponseCode();
             BufferedReader br;
             if(responseCode==200) { // 정상 호출

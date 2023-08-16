@@ -14,8 +14,8 @@ import java.net.URLEncoder;
 public class Project01_D {
     public static void main(String[] args) {
         // String apiURL = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=";
-        String client_id ="???"; // Naver cloud 지도 API 발급 ID
-        String client_secret="???"; // Naver cloud 지도 API 발급 P/W
+        String client_id ="2ol0grbpbo"; // Naver cloud 지도 API 발급 ID
+        String client_secret="7kH85K88PydJmNpqZil6damqvR2tT6Aj6Lu6kzVa"; // Naver cloud 지도 API 발급 P/W
         BufferedReader io = new BufferedReader(new InputStreamReader(System.in));
 
         try{
